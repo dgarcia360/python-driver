@@ -26,7 +26,7 @@ jobs:
     - name: Build docs
       run: |
         cd docs
-        make html
+        make dirhtml
     - name: Deploy
       run : ./docs/_utils/deploy.sh
       env:
