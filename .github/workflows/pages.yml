@@ -22,12 +22,12 @@ jobs:
       run: | 
         sudo apt-get install libev4 libev-dev
         sudo apt-get install build-essential python-dev
-        ./scripts/setup.sh
+        ./docs/_utils/setup.sh
     - name: Build docs
       run: |
         cd docs
         make html
     - name: Deploy
-      run : ./scripts/deploy.sh
+      run : ./docs/_utils/deploy.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
