@@ -23,7 +23,7 @@ jobs:
         sudo apt-get install libev4 libev-dev
         sudo apt-get install build-essential python-dev
         cd docs
-	./_utils/setup.sh
+        ./_utils/setup.sh
     - name: Build docs
       run: |
         cd docs
