@@ -26,9 +26,9 @@ jobs:
         ./_utils/setup.sh
     - name: Build docs
       run: |
-	mkdir docs/_build
-	mkdir docs/_build/dirhtml
-	sphinx-multiversion docs/ docs/_build/dirhtml/
+        mkdir docs/_build
+        mkdir docs/_build/dirhtml
+        sphinx-multiversion docs/ docs/_build/dirhtml/
     - name: Deploy
       run : ./docs/_utils/deploy.sh
       env:
