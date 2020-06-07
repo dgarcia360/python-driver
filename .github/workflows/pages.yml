@@ -26,8 +26,7 @@ jobs:
         ./_utils/setup.sh
     - name: Build docs
       run: |
-        cd docs
-        make dirhtml
+        sphinx-multiversion docs docs/build/dirhtml --dump-metadata
     - name: Deploy
       run : ./docs/_utils/deploy.sh
       env:
