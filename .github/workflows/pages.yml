@@ -20,14 +20,13 @@ jobs:
         python-version: 3.7
     - name: Setup dependencies
       run: | 
+        git tag
         sudo apt-get install libev4 libev-dev
         sudo apt-get install build-essential python-dev
         cd docs
         ./_utils/setup.sh
     - name: Build docs
       run: |
-        mkdir docs/_build
-        mkdir docs/_build/dirhtml
         sphinx-multiversion docs/ docs/_build/dirhtml/
     - name: Deploy
       run : ./docs/_utils/deploy.sh
