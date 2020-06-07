@@ -4,7 +4,6 @@ git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY
 cp -r docs/_build/dirhtml/* gh-pages/
 cd gh-pages
 touch .nojekyll
-mv master/* .
 git config --local user.email "action@scylladb.com"
 git config --local user.name "GitHub Action"
 git add .

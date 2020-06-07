@@ -233,7 +233,7 @@ man_pages = [
 # Whitelist pattern for tags (set to None to ignore all tags)
 smv_tag_whitelist = r'^\d+\.\d+\.\d+$'
 # Whitelist pattern for branches (set to None to ignore all branches)
-smv_branch_whitelist = r"^master$"
+#smv_branch_whitelist = r"^master$"
 # Whitelist pattern for remotes (set to None to use local branches only)
 smv_remote_whitelist = r"^origin$"
 # Pattern for released versions
